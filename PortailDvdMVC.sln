@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServices.MainCon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServices.Tests", "ApplicationServices.Tests\ApplicationServices.Tests.csproj", "{779EAE6D-5C1A-452F-A753-C8ECB757115D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data.SeedWork", "Infrastructure.Data.SeedWork\Infrastructure.Data.SeedWork.csproj", "{3A7F6A2A-2C45-401F-9A03-46A7ED74E8D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data.Seedwork", "Infrastructure.Data.SeedWork\Infrastructure.Data.Seedwork.csproj", "{3A7F6A2A-2C45-401F-9A03-46A7ED74E8D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Seedwork", "Domain.Seedwork\Domain.Seedwork.csproj", "{6E183F1C-D6DE-4D77-B87A-13BB25106B25}"
 EndProject

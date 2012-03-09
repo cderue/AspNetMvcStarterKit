@@ -40,8 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Aggregates\Adresse.cs" />
+    <Compile Include="Aggregates\Affaire.cs" />
+    <Compile Include="Aggregates\Compte.cs" />
+    <Compile Include="Aggregates\Contact.cs" />
+    <Compile Include="Aggregates\Interlocuteur.cs" />
+    <Compile Include="Aggregates\Prospect.cs" />
+    <Compile Include="Aggregates\Status.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Specifications\ContactSpecifications.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Seedwork\Domain.Seedwork.csproj">
+      <Project>{6E183F1C-D6DE-4D77-B87A-13BB25106B25}</Project>
+      <Name>Domain.Seedwork</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
