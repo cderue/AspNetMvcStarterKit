@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortailDvdMVC", "FicheEngagementDepense\PortailDvdMVC.csproj", "{A8D00BAE-2948-45F8-91A7-C82246CFC199}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortailDvdMVC.Tests", "FicheEngagementDepense.Tests\PortailDvdMVC.Tests.csproj", "{373BBC42-D194-4082-ADDC-D0678CC4749F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8D00BAE-2948-45F8-91A7-C82246CFC199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8D00BAE-2948-45F8-91A7-C82246CFC199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8D00BAE-2948-45F8-91A7-C82246CFC199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8D00BAE-2948-45F8-91A7-C82246CFC199}.Release|Any CPU.Build.0 = Release|Any CPU
+		{373BBC42-D194-4082-ADDC-D0678CC4749F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373BBC42-D194-4082-ADDC-D0678CC4749F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373BBC42-D194-4082-ADDC-D0678CC4749F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373BBC42-D194-4082-ADDC-D0678CC4749F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
