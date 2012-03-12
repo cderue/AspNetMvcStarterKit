@@ -1,0 +1,221 @@
+﻿<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MainContextModel.Store" Alias="Self" Provider="Devart.Data.Oracle" ProviderManifestToken="Ora11g" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:devart="http://devart.com/schemas/edml/StorageSchemaExtensions/1.0" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="MainContextEntitiesStoreContainer">
+          <EntitySet Name="CONTACTs" EntityType="MainContextModel.Store.CONTACT" store:Type="Tables" Schema="MIGA_GDP" Table="CONTACT" />
+        </EntityContainer>
+        <EntityType Name="CONTACT">
+          <Key>
+            <PropertyRef Name="IDCONTACT" />
+          </Key>
+          <Property Name="IDCONTACT" Type="int64" Nullable="false" />
+          <Property Name="IDBASE" Type="int64" Nullable="false" />
+          <Property Name="CODECONTACT" Type="VARCHAR2" MaxLength="15" />
+          <Property Name="TYPE" Type="int64" Nullable="false" />
+          <Property Name="RCS" Type="VARCHAR2" MaxLength="20" />
+          <Property Name="SIRET" Type="VARCHAR2" MaxLength="14" />
+          <Property Name="TVA" Type="VARCHAR2" MaxLength="20" />
+          <Property Name="IDEXTERNE" Type="VARCHAR2" MaxLength="20" />
+          <Property Name="RNBJR" Type="int" />
+          <Property Name="RLE" Type="int" />
+          <Property Name="RDOMIC" Type="VARCHAR2" MaxLength="25" />
+          <Property Name="RDOMIC2" Type="VARCHAR2" MaxLength="25" />
+          <Property Name="LOGO" Type="VARCHAR2" MaxLength="50" />
+          <Property Name="COMM" Type="VARCHAR2" MaxLength="255" />
+          <Property Name="CQUI" Type="int64" />
+          <Property Name="CDATE" Type="DATE" />
+          <Property Name="CHEURE" Type="int" />
+          <Property Name="CSITE" Type="int64" />
+          <Property Name="MQUI" Type="int64" />
+          <Property Name="MDATE" Type="DATE" />
+          <Property Name="MHEURE" Type="int" />
+          <Property Name="MSITE" Type="int64" />
+          <Property Name="ADRESSEPRINCIP" Type="int64" />
+          <Property Name="IDMODEREGLEMENT" Type="int64" />
+          <Property Name="ADRESSEMAILING" Type="int64" />
+          <Property Name="CHANGEBASE" Type="DATE" />
+          <Property Name="BASEPRECED" Type="int64" />
+          <Property Name="IDCONDREGLEMENT" Type="int64" />
+          <Property Name="IDDEVISE" Type="int64" />
+          <Property Name="IBAN" Type="VARCHAR2" MaxLength="30" />
+          <Property Name="IDAPE" Type="int64" />
+          <Property Name="CONDRGTPART" Type="VARCHAR2" MaxLength="100" />
+          <Property Name="IDCATTARIF" Type="int64" />
+          <Property Name="CONDCIALREMISE" Type="FLOAT" />
+          <Property Name="CONDCIALENCOURS" Type="FLOAT" />
+          <Property Name="CONDCIALACCORD" Type="DATE" />
+          <Property Name="CONDCIALACCORDQUI" Type="int64" />
+          <Property Name="IDCOMMERCIAL" Type="int64" />
+          <Property Name="IDDOSSIER" Type="int64" />
+          <Property Name="SOMMEIL" Type="int" />
+          <Property Name="LOGIN" Type="VARCHAR2" MaxLength="20" />
+          <Property Name="PASSWORD" Type="VARCHAR2" MaxLength="20" />
+          <Property Name="IDMOTIFSOMMEIL" Type="int64" />
+          <Property Name="DATESOMMEIL" Type="DATE" />
+          <Property Name="IDQUISOMMEIL" Type="int64" />
+          <Property Name="IDSITE" Type="int64" />
+          <Property Name="IDPROFIL" Type="int64" />
+          <Property Name="ORGASRVC" Type="int" />
+          <Property Name="IDORGASRVC" Type="int64" />
+          <Property Name="IDSTATUT" Type="int64" />
+          <Property Name="IDSOUSSTATUT" Type="int64" />
+          <Property Name="ANNUAIRE" Type="int" />
+          <Property Name="OA_ANNUAIRE" Type="int" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MainContextModel" Alias="Self" d4p1:ViewGeneration="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:devart="http://devart.com/schemas/edml/ConceptualSchemaExtensions/1.0" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" xmlns:d4p1="http://devart.com/schemas/edml/ConceptualSchemaExtensions/1.0" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="MainContextEntities" annotation:LazyLoadingEnabled="true" ed:Guid="78c6da12-e5ec-4384-af23-3716e51a2879">
+          <EntitySet Name="Contacts" EntityType="MainContextModel.Contact" />
+        </EntityContainer>
+        <EntityType Name="Contact" ed:Guid="619ce4ad-658c-427d-9160-a2536da05745">
+          <Key>
+            <PropertyRef Name="IDCONTACT" />
+          </Key>
+          <Property Name="IDCONTACT" Type="Int64" Nullable="false" ed:ValidateRequired="True" ed:Guid="1e24049c-0e55-42a9-a3c1-89a58de83658" />
+          <Property Name="IDBASE" Type="Int64" Nullable="false" ed:ValidateRequired="True" ed:Guid="8ed3aa4d-9966-4b95-bf35-8016a2a63666" />
+          <Property Name="CODECONTACT" Type="String" MaxLength="15" ed:ValidateMaxLength="15" ed:ValidateRequired="False" ed:Guid="27eb3b31-0682-4292-b299-ce70ba213cea" />
+          <Property Name="TYPE" Type="Int64" Nullable="false" ed:ValidateRequired="True" ed:Guid="4b024e80-4d8f-4925-8a01-27438eac5fca" />
+          <Property Name="RCS" Type="String" MaxLength="20" ed:ValidateMaxLength="20" ed:ValidateRequired="False" ed:Guid="0c2dad91-d3a9-4731-abb9-c70ca818000f" />
+          <Property Name="SIRET" Type="String" MaxLength="14" ed:ValidateMaxLength="14" ed:ValidateRequired="False" ed:Guid="79735f35-6bbf-48d6-8a51-b68e32ec0846" />
+          <Property Name="TVA" Type="String" MaxLength="20" ed:ValidateMaxLength="20" ed:ValidateRequired="False" ed:Guid="53b5700f-a5b2-47aa-a89f-4bba07d83dc1" />
+          <Property Name="IDEXTERNE" Type="String" MaxLength="20" ed:ValidateMaxLength="20" ed:ValidateRequired="False" ed:Guid="495531a1-6f8d-4bc8-a86e-ea91a58ee992" />
+          <Property Name="RNBJR" Type="Int32" ed:ValidateRequired="False" ed:Guid="d7c1603c-b9e1-4529-b382-d957fa7d5f13" />
+          <Property Name="RLE" Type="Int32" ed:ValidateRequired="False" ed:Guid="8b59c64b-3fa1-489a-b754-1c6c7a2208d1" />
+          <Property Name="RDOMIC" Type="String" MaxLength="25" ed:ValidateMaxLength="25" ed:ValidateRequired="False" ed:Guid="a39e5b40-8801-4ea5-a346-b322940bedda" />
+          <Property Name="RDOMIC2" Type="String" MaxLength="25" ed:ValidateMaxLength="25" ed:ValidateRequired="False" ed:Guid="305299d4-0866-4ce7-a06b-10ea612b3e05" />
+          <Property Name="LOGO" Type="String" MaxLength="50" ed:ValidateMaxLength="50" ed:ValidateRequired="False" ed:Guid="ce03ba92-40d2-40c9-8846-84b79941ead4" />
+          <Property Name="COMM" Type="String" MaxLength="255" ed:ValidateMaxLength="255" ed:ValidateRequired="False" ed:Guid="076cfdb4-1707-4c04-8955-05e8db2b355a" />
+          <Property Name="CQUI" Type="Int64" ed:ValidateRequired="False" ed:Guid="a2c15be0-6eb0-498f-aaba-ff0812264f07" />
+          <Property Name="CDATE" Type="DateTime" Precision="0" ed:ValidateRequired="False" ed:Guid="a0665814-a501-41c5-9edd-128eb267aa5f" />
+          <Property Name="CHEURE" Type="Int32" ed:ValidateRequired="False" ed:Guid="ed609c6e-e5b4-4d26-bb12-5495d1174df2" />
+          <Property Name="CSITE" Type="Int64" ed:ValidateRequired="False" ed:Guid="8b01e3fb-0913-4ce4-a217-563501784f68" />
+          <Property Name="MQUI" Type="Int64" ed:ValidateRequired="False" ed:Guid="7544c8e6-2542-4240-9c5f-e185bf6ba54d" />
+          <Property Name="MDATE" Type="DateTime" Precision="0" ed:ValidateRequired="False" ed:Guid="fe3b9261-5420-42d3-b6a0-d2840698167a" />
+          <Property Name="MHEURE" Type="Int32" ed:ValidateRequired="False" ed:Guid="6ec6ea54-bbcb-4321-9f47-17e55637bcf6" />
+          <Property Name="MSITE" Type="Int64" ed:ValidateRequired="False" ed:Guid="12b3b0d0-1636-4b2d-9ede-9643a2f09305" />
+          <Property Name="ADRESSEPRINCIP" Type="Int64" ed:ValidateRequired="False" ed:Guid="14058304-ace7-4aa6-a5fb-72a39a7e39b0" />
+          <Property Name="IDMODEREGLEMENT" Type="Int64" ed:ValidateRequired="False" ed:Guid="078e77df-d5df-4092-982c-8197b0f8e89b" />
+          <Property Name="ADRESSEMAILING" Type="Int64" ed:ValidateRequired="False" ed:Guid="a78fbb2a-696d-42cb-a6c9-77a3a167f57e" />
+          <Property Name="CHANGEBASE" Type="DateTime" Precision="0" ed:ValidateRequired="False" ed:Guid="d0d9a0d2-1c26-488d-b268-abf6a321da65" />
+          <Property Name="BASEPRECED" Type="Int64" ed:ValidateRequired="False" ed:Guid="7c4fd9b5-825a-4f07-a528-939382810ba1" />
+          <Property Name="IDCONDREGLEMENT" Type="Int64" ed:ValidateRequired="False" ed:Guid="9a7bdb34-9b6c-4bae-ae29-117caec20b97" />
+          <Property Name="IDDEVISE" Type="Int64" ed:ValidateRequired="False" ed:Guid="18d607da-4de1-4061-9b96-4027561370f0" />
+          <Property Name="IBAN" Type="String" MaxLength="30" ed:ValidateMaxLength="30" ed:ValidateRequired="False" ed:Guid="dbdc33fe-c456-4253-9f37-4d6e353f34f7" />
+          <Property Name="IDAPE" Type="Int64" ed:ValidateRequired="False" ed:Guid="2ad6c58f-013d-451d-91be-4fefc38b6a97" />
+          <Property Name="CONDRGTPART" Type="String" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="False" ed:Guid="50a386dd-f97e-432a-b424-c2ccfe12138d" />
+          <Property Name="IDCATTARIF" Type="Int64" ed:ValidateRequired="False" ed:Guid="44f0a4ee-b823-425b-9424-7651708cef9e" />
+          <Property Name="CONDCIALREMISE" Type="Decimal" ed:ValidateRequired="False" ed:Guid="ef68c5f4-38b7-41c5-a409-1f48da7594ac" />
+          <Property Name="CONDCIALENCOURS" Type="Decimal" ed:ValidateRequired="False" ed:Guid="5809efd5-55c2-4278-9c4c-27e7cbeed6c0" />
+          <Property Name="CONDCIALACCORD" Type="DateTime" Precision="0" ed:ValidateRequired="False" ed:Guid="10e9147b-324a-487e-9f75-33b9f040fc1c" />
+          <Property Name="CONDCIALACCORDQUI" Type="Int64" ed:ValidateRequired="False" ed:Guid="a28171f2-aaa2-47f2-bae3-a239b811408c" />
+          <Property Name="IDCOMMERCIAL" Type="Int64" ed:ValidateRequired="False" ed:Guid="3b2e0879-960e-4f34-9abf-497f975236a1" />
+          <Property Name="IDDOSSIER" Type="Int64" ed:ValidateRequired="False" ed:Guid="80ab3ba9-2269-4ad0-bdeb-8a8ac1c5b26c" />
+          <Property Name="SOMMEIL" Type="Int32" ed:ValidateRequired="False" ed:Guid="94058d68-dffe-45e6-9490-ba6d62097a09" />
+          <Property Name="LOGIN" Type="String" MaxLength="20" ed:ValidateMaxLength="20" ed:ValidateRequired="False" ed:Guid="8462d58f-afb2-41d9-b9b6-e221befec8f5" />
+          <Property Name="PASSWORD" Type="String" MaxLength="20" ed:ValidateMaxLength="20" ed:ValidateRequired="False" ed:Guid="27bba535-5e01-4f00-b681-27c4e9a11093" />
+          <Property Name="IDMOTIFSOMMEIL" Type="Int64" ed:ValidateRequired="False" ed:Guid="ca68c7c2-7c9c-4f57-96c5-31a7ef170cce" />
+          <Property Name="DATESOMMEIL" Type="DateTime" Precision="0" ed:ValidateRequired="False" ed:Guid="5b2448f9-a227-47b6-a346-6d97ee2d0691" />
+          <Property Name="IDQUISOMMEIL" Type="Int64" ed:ValidateRequired="False" ed:Guid="d365264a-c0b5-4473-b7e4-b706aaa55eea" />
+          <Property Name="IDSITE" Type="Int64" ed:ValidateRequired="False" ed:Guid="e8d8673b-d800-4680-8c9e-ecfb7d530c23" />
+          <Property Name="IDPROFIL" Type="Int64" ed:ValidateRequired="False" ed:Guid="239f3b0e-67d9-41e7-b1ec-682665bac64a" />
+          <Property Name="ORGASRVC" Type="Int32" ed:ValidateRequired="False" ed:Guid="d6b61e84-9beb-4929-8048-2bc6fc2846cb" />
+          <Property Name="IDORGASRVC" Type="Int64" ed:ValidateRequired="False" ed:Guid="60fd582d-11b6-45db-90de-556b03909efe" />
+          <Property Name="IDSTATUT" Type="Int64" ed:ValidateRequired="False" ed:Guid="a10cd91b-6020-47e0-ab99-3d04708ef8cb" />
+          <Property Name="IDSOUSSTATUT" Type="Int64" ed:ValidateRequired="False" ed:Guid="47a54945-47f9-459c-ba8f-675dfb57c16f" />
+          <Property Name="ANNUAIRE" Type="Int32" ed:ValidateRequired="False" ed:Guid="f75675ed-c184-4402-a3b7-c20e504cf9bb" />
+          <Property Name="OA_ANNUAIRE" Type="Int32" ed:ValidateRequired="False" ed:Guid="6ba65986-4505-4cfb-b6b6-649c7be50600" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- MSL content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MainContextEntitiesStoreContainer" CdmEntityContainer="MainContextEntities">
+          <EntitySetMapping Name="Contacts">
+            <EntityTypeMapping TypeName="MainContextModel.Contact">
+              <MappingFragment StoreEntitySet="CONTACTs">
+                <ScalarProperty Name="IDCONTACT" ColumnName="IDCONTACT" />
+                <ScalarProperty Name="IDBASE" ColumnName="IDBASE" />
+                <ScalarProperty Name="CODECONTACT" ColumnName="CODECONTACT" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="RCS" ColumnName="RCS" />
+                <ScalarProperty Name="SIRET" ColumnName="SIRET" />
+                <ScalarProperty Name="TVA" ColumnName="TVA" />
+                <ScalarProperty Name="IDEXTERNE" ColumnName="IDEXTERNE" />
+                <ScalarProperty Name="RNBJR" ColumnName="RNBJR" />
+                <ScalarProperty Name="RLE" ColumnName="RLE" />
+                <ScalarProperty Name="RDOMIC" ColumnName="RDOMIC" />
+                <ScalarProperty Name="RDOMIC2" ColumnName="RDOMIC2" />
+                <ScalarProperty Name="LOGO" ColumnName="LOGO" />
+                <ScalarProperty Name="COMM" ColumnName="COMM" />
+                <ScalarProperty Name="CQUI" ColumnName="CQUI" />
+                <ScalarProperty Name="CDATE" ColumnName="CDATE" />
+                <ScalarProperty Name="CHEURE" ColumnName="CHEURE" />
+                <ScalarProperty Name="CSITE" ColumnName="CSITE" />
+                <ScalarProperty Name="MQUI" ColumnName="MQUI" />
+                <ScalarProperty Name="MDATE" ColumnName="MDATE" />
+                <ScalarProperty Name="MHEURE" ColumnName="MHEURE" />
+                <ScalarProperty Name="MSITE" ColumnName="MSITE" />
+                <ScalarProperty Name="ADRESSEPRINCIP" ColumnName="ADRESSEPRINCIP" />
+                <ScalarProperty Name="IDMODEREGLEMENT" ColumnName="IDMODEREGLEMENT" />
+                <ScalarProperty Name="ADRESSEMAILING" ColumnName="ADRESSEMAILING" />
+                <ScalarProperty Name="CHANGEBASE" ColumnName="CHANGEBASE" />
+                <ScalarProperty Name="BASEPRECED" ColumnName="BASEPRECED" />
+                <ScalarProperty Name="IDCONDREGLEMENT" ColumnName="IDCONDREGLEMENT" />
+                <ScalarProperty Name="IDDEVISE" ColumnName="IDDEVISE" />
+                <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+                <ScalarProperty Name="IDAPE" ColumnName="IDAPE" />
+                <ScalarProperty Name="CONDRGTPART" ColumnName="CONDRGTPART" />
+                <ScalarProperty Name="IDCATTARIF" ColumnName="IDCATTARIF" />
+                <ScalarProperty Name="CONDCIALREMISE" ColumnName="CONDCIALREMISE" />
+                <ScalarProperty Name="CONDCIALENCOURS" ColumnName="CONDCIALENCOURS" />
+                <ScalarProperty Name="CONDCIALACCORD" ColumnName="CONDCIALACCORD" />
+                <ScalarProperty Name="CONDCIALACCORDQUI" ColumnName="CONDCIALACCORDQUI" />
+                <ScalarProperty Name="IDCOMMERCIAL" ColumnName="IDCOMMERCIAL" />
+                <ScalarProperty Name="IDDOSSIER" ColumnName="IDDOSSIER" />
+                <ScalarProperty Name="SOMMEIL" ColumnName="SOMMEIL" />
+                <ScalarProperty Name="LOGIN" ColumnName="LOGIN" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="IDMOTIFSOMMEIL" ColumnName="IDMOTIFSOMMEIL" />
+                <ScalarProperty Name="DATESOMMEIL" ColumnName="DATESOMMEIL" />
+                <ScalarProperty Name="IDQUISOMMEIL" ColumnName="IDQUISOMMEIL" />
+                <ScalarProperty Name="IDSITE" ColumnName="IDSITE" />
+                <ScalarProperty Name="IDPROFIL" ColumnName="IDPROFIL" />
+                <ScalarProperty Name="ORGASRVC" ColumnName="ORGASRVC" />
+                <ScalarProperty Name="IDORGASRVC" ColumnName="IDORGASRVC" />
+                <ScalarProperty Name="IDSTATUT" ColumnName="IDSTATUT" />
+                <ScalarProperty Name="IDSOUSSTATUT" ColumnName="IDSOUSSTATUT" />
+                <ScalarProperty Name="ANNUAIRE" ColumnName="ANNUAIRE" />
+                <ScalarProperty Name="OA_ANNUAIRE" ColumnName="OA_ANNUAIRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <edmx:Diagrams>
+      <Diagram Name="Main" />
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

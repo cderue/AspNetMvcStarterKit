@@ -45,8 +45,15 @@
     <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,8 +61,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="MainContextModel.MainContextEntities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="MainContextModel.DbContext.tmpl">
+      <DependentUpon>MainContextModel.edml</DependentUpon>
+    </None>
+    <None Include="MainContextModel.Diagram1.view">
+      <DependentUpon>MainContextModel.edml</DependentUpon>
+    </None>
+    <DevartEntityDeploy Include="MainContextModel.edml">
+      <Generator>DevartEfGenerator</Generator>
+      <LastGenOutput>MainContextModel.info</LastGenOutput>
+    </DevartEntityDeploy>
+    <None Include="MainContextModel.edps">
+      <DependentUpon>MainContextModel.edml</DependentUpon>
+    </None>
+    <None Include="MainContextModel.info">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainContextModel.edml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.MainContext\Domain.MainContext.csproj">
+      <Project>{C0AAF86D-24EE-4FDB-BC56-E3F0CDE7D4A1}</Project>
+      <Name>Domain.MainContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.Data.SeedWork\Infrastructure.Data.Seedwork.csproj">
+      <Project>{3A7F6A2A-2C45-401F-9A03-46A7ED74E8D1}</Project>
+      <Name>Infrastructure.Data.Seedwork</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
