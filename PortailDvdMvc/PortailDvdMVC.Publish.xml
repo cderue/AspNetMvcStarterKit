@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="dvdvbriqasw001.dvd.pri:8172/msdeploy.axd" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="PortailDVD_QAS_4.0/ClientMvc" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="QAS1" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="dvd\briadm" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATlGghOObLk2qXb8n3FFMOQAAAAACAAAAAAADZgAAwAAAABAAAACvgfL1PC9brRDQdb2t9rd+AAAAAASAAACgAAAAEAAAANyN1zhmD9crocs+tkpW6ysYAAAATlJByiZ91n6loTp3ARas7MHHJOe6ArZSFAAAAMUyNhPApAsDM5+6LN4Xjc8GjMoA" SelectedForPublish="True" />
+</publishData>
