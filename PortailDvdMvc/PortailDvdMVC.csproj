@@ -50,10 +50,11 @@
     <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
     <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
-    <DeployIisAppPath>PortailDVD_QAS_4.0/ClientMvc</DeployIisAppPath>
+    <DeployIisAppPath>PortailDVD_QAS_4.0/PortailDVDMvc</DeployIisAppPath>
     <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
     <IncludeIisSettings>false</IncludeIisSettings>
     <PublishDatabases>false</PublishDatabases>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Elmah">
