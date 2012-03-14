@@ -7,6 +7,6 @@ namespace ApplicationServices.Seedwork
 {
     public class Class1
     {
-        //sdsd
+        //sdsdqsdsd
     }
 }

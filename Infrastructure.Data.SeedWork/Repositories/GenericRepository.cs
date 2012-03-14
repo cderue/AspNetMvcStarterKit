@@ -7,7 +7,7 @@ using Domain.Seedwork.Specifications;
 
 namespace Infrastructure.Data.Seedwork.Repositories
 {
-    public class GenericRepository<TEntity> where TEntity : class
+    public abstract class GenericRepository<TEntity> where TEntity : class
     {
 
         private IQueryableUnitOfWork _UnitOfWork;
